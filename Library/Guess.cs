@@ -22,12 +22,7 @@
             return max;
         }
 
-        public override void CreateInformation()
-        {
-            base.CreateInformation();
-        }
-
-        public void AddBill()
+        public void Input()
         {
             Console.Write("Enter number of data: ");
             int N = Convert.ToInt32(Console.ReadLine());
@@ -41,7 +36,7 @@
             }
 
         }
-        public void DisplayBill()
+        public void Display()
         {
 
             Console.WriteLine("{0, 20}   ||{1, 10}   ||{2, 15}   ||{3, 15}  ||", "ID", "Guess ID", "StartDay", "EndDate");
@@ -49,7 +44,7 @@
             {
                 Console.WriteLine("{0, 20}   ||{1, 10}   ||{2, 15}   ||{3, 15}  ||"
                     , bill.ID, ID, bill.StartDate?.ToString(format), bill.EndDate?.ToString(format));
-                bill.DisplayBillInformation();
+                bill.Display();
             }
         }
         public Bill FindByID(int id)
@@ -64,7 +59,7 @@
             }
             return result;
         }
-        public void UpdateBill()
+        public void Update()
         {
 
             Console.Write("Enter ID to update : ");
@@ -75,7 +70,7 @@
                 bill.UpdateBill();
             }
         }
-        public void DeleteBill()
+        public void Delete()
         {
             Console.Write("Enter ID of deleting bill: ");
             int d = Convert.ToInt32(Console.ReadLine());

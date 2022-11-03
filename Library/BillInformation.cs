@@ -58,7 +58,7 @@
         public void DisplayBillInformation()
         {
             Console.WriteLine("ID: ", +_id);
-            Console.WriteLine("Book: ID:{0} Name:{1} ", _book.ID, _book.Name);
+            Console.WriteLine("Book: ID:{0} Name:{1} ", _book?.ID, _book?.Name);
             Console.WriteLine("Quantity: " + _quantity);
             Console.WriteLine("=============================================================");
         }

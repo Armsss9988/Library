@@ -48,7 +48,8 @@ namespace Library
             }
 
         }
-        public BillInformation FindBillInforByID(int billInforID)
+        // BIll information function:
+        public BillInformation FindByID(int billInforID)
         {
             BillInformation result = null;
             foreach (BillInformation billInfor in _billInformation)
@@ -60,27 +61,27 @@ namespace Library
             }
             return result;
         }
-        public void AddBillInformation()
+        public void Input()
         {
             BillInformation billInfor = new();
             billInfor.CreateBillInformation();
             _billInformation.Add(billInfor);
         }
-        public void UpdateBillInformation()
+        public void Update()
         {
             Console.Write("Enter ID: ");
             int billInforID = Convert.ToInt32(Console.ReadLine());
-            BillInformation updateBillInfor = FindBillInforByID(billInforID);
+            BillInformation updateBillInfor = FindByID(billInforID);
             updateBillInfor.UpdateBillInformation();
         }
-        public void DeleteBillInformation()
+        public void Delete()
         {
             Console.Write("Enter ID: ");
             int billInforID = Convert.ToInt32(Console.ReadLine());
-            BillInformation deleteBillInfor = FindBillInforByID(billInforID);
+            BillInformation deleteBillInfor = FindByID(billInforID);
             _billInformation.Remove(deleteBillInfor);
         }
-        public void DisplayBillInformation()
+        public void Display()
         {
             foreach (BillInformation billInfor in _billInformation)
             {

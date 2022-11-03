@@ -248,28 +248,28 @@
                                 {
                                     case 1:
                                         Console.WriteLine("Add Bill!!!");
-                                        guess.AddBill();
+                                        guess.Input();
                                         Console.WriteLine("Add success");
                                         Console.WriteLine("Type any key to continue");
                                         Console.ReadKey();
                                         break;
                                     case 2:
                                         Console.WriteLine("Update bill!!!");
-                                        guess.UpdateBill();
+                                        guess.Update();
                                         Console.WriteLine("Update success");
                                         Console.WriteLine("Type any key to continue");
                                         Console.ReadKey();
                                         break;
                                     case 3:
                                         Console.WriteLine("Delete bill!!!");
-                                        guess.DeleteBill();
+                                        guess.Delete();
                                         Console.WriteLine("Delete success");
                                         Console.WriteLine("Type any key to continue");
                                         Console.ReadKey();
                                         break;
                                     case 4:
                                         Console.WriteLine("Display history!!!");
-                                        guess.DisplayBill();
+                                        guess.Display();
                                         Console.WriteLine("Type any key to continue");
                                         Console.ReadKey();
                                         break;
@@ -304,28 +304,28 @@
                                             {
                                                 case 1:
                                                     Console.WriteLine("Add Bill Information!!!");
-                                                    bill.AddBillInformation();
+                                                    bill.Input();
                                                     Console.WriteLine("Add success");
                                                     Console.WriteLine("Type any key to continue");
                                                     Console.ReadKey();
                                                     break;
                                                 case 2:
                                                     Console.WriteLine("Update bill!!!");
-                                                    bill.UpdateBillInformation();
+                                                    bill.Update();
                                                     Console.WriteLine("Update success");
                                                     Console.WriteLine("Type any key to continue");
                                                     Console.ReadKey();
                                                     break;
                                                 case 3:
                                                     Console.WriteLine("Delete bill!!!");
-                                                    bill.DeleteBillInformation();
+                                                    bill.Delete();
                                                     Console.WriteLine("Delete success");
                                                     Console.WriteLine("Type any key to continue");
                                                     Console.ReadKey();
                                                     break;
                                                 case 4:
                                                     Console.WriteLine("Display history!!!");
-                                                    bill.DisplayBillInformation();
+                                                    bill.Display();
                                                     Console.WriteLine("Type any key to continue");
                                                     Console.ReadKey();
                                                     break;
