@@ -2,7 +2,7 @@
 
 namespace Library
 {
-    internal class Bill
+    internal class Bill : IManagement
     {
         private int _id;
         private List<BillInformation> _billInformation = new();
@@ -60,6 +60,18 @@ namespace Library
                 }
             }
             return result;
+        }
+        public int IdentityID()
+        {
+            int max = 0;
+            foreach (BillInformation billÌnormation in _billInformation)
+            {
+                if (billÌnormation.ID >= max)
+                {
+                    max = billÌnormation.ID + 1;
+                }
+            }
+            return max;
         }
         public void Input()
         {
